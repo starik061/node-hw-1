@@ -50,7 +50,9 @@ async function addContact(name, email, phone) {
   return newContact;
 }
 
-// (async () => {
-//   const a = await addContact("1", "2", "3");
-//   console.log(a);
-// })();
+module.exports = {
+  listContacts,
+  getContactById,
+  removeContact,
+  addContact,
+};
